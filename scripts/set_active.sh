@@ -120,7 +120,7 @@ cmd_list() {
   [[ -f "$profile_dir/CURRENT" ]] && current_file=$(cat "$profile_dir/CURRENT")
 
   local count=0
-  for f in "$profile_dir"/*.docx "$profile_dir"/*.pdf 2>/dev/null; do
+  for f in "$profile_dir"/*.docx "$profile_dir"/*.pdf; do
     [[ -f "$f" ]] || continue
     local fname
     fname=$(basename "$f")
