@@ -1,0 +1,205 @@
+%% Shreyas Khandare — AI Engineer Resume
+%% Tailored for: OpenCall.ai / AI Prompt & Agent Developer
+%% Version: v2 | Date: 2026-04-07
+%% Compiler: XeLaTeX
+
+\documentclass[10pt, letterpaper]{article}
+
+%% ── Packages ──────────────────────────────────────────────────────────────
+\usepackage{fontspec}
+\usepackage[
+  top=0.60in, bottom=0.60in,
+  left=0.60in, right=0.60in
+]{geometry}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{microtype}
+\usepackage{setspace}
+\usepackage{parskip}
+
+%% ── Fonts ─────────────────────────────────────────────────────────────────
+\setmainfont{Liberation Sans}[
+  BoldFont = Liberation Sans Bold,
+  ItalicFont = Liberation Sans Italic,
+  BoldItalicFont = Liberation Sans Bold Italic
+]
+
+%% ── Colours ───────────────────────────────────────────────────────────────
+\definecolor{navy}{HTML}{1B3A6B}
+\definecolor{midblue}{HTML}{2C5F9E}
+\definecolor{darktext}{HTML}{1A1A1A}
+\definecolor{mutedtext}{HTML}{555555}
+
+%% ── Hyperlink setup ───────────────────────────────────────────────────────
+\hypersetup{
+  colorlinks=true,
+  urlcolor=midblue,
+  linkcolor=midblue,
+  hidelinks
+}
+
+%% ── No page numbers ───────────────────────────────────────────────────────
+\pagestyle{empty}
+
+%% ── Spacing helpers ───────────────────────────────────────────────────────
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+%% ── Section rule macro ────────────────────────────────────────────────────
+\newcommand{\resumesection}[1]{%
+  \vspace{8pt}%
+  {\large\bfseries\color{navy} #1}%
+  \vspace{2pt}%
+  \hrule height 0.5pt \color{navy}%
+  \vspace{4pt}%
+}
+
+%% ── Bullet list style ─────────────────────────────────────────────────────
+\setlist[itemize]{
+  leftmargin=1.2em,
+  itemsep=1.5pt,
+  topsep=2pt,
+  parsep=0pt,
+  label={\textcolor{navy}{\textbullet}}
+}
+
+%% ══════════════════════════════════════════════════════════════════════════
+\begin{document}
+%% ══════════════════════════════════════════════════════════════════════════
+
+%% ── HEADER ────────────────────────────────────────────────────────────────
+\begin{center}
+  {\fontsize{20pt}{22pt}\selectfont\bfseries\color{navy} Shreyas Khandare}\\[4pt]
+  {\fontsize{10pt}{13pt}\selectfont\color{mutedtext}
+    AI / LLM Engineer\enspace\textcolor{midblue}{·}\enspace
+    Prompt Engineering\enspace\textcolor{midblue}{·}\enspace
+    Multi-Agent Systems\enspace\textcolor{midblue}{·}\enspace
+    Production AI Agents}\\[5pt]
+  {\fontsize{8.5pt}{11pt}\selectfont\color{mutedtext}
+    +1\,(448)\,867-6820
+    \enspace\textcolor{midblue}{|}\enspace
+    \href{mailto:shreyas.khandare@outlook.com}{shreyas.khandare@outlook.com}
+    \enspace\textcolor{midblue}{|}\enspace
+    \href{https://linkedin.com/in/shreyas-khandare}{linkedin.com/in/shreyas-khandare}
+    \enspace\textcolor{midblue}{|}\enspace
+    \href{https://github.com/ShreyasKhandare}{github.com/ShreyasKhandare}
+  }
+\end{center}
+
+\vspace{-2pt}
+
+%% ── SUMMARY ───────────────────────────────────────────────────────────────
+\resumesection{SUMMARY}
+
+{\fontsize{9.5pt}{13pt}\selectfont\color{darktext}
+AI/LLM Engineer with M.S.\ in Computer Science (FSU) specializing in \textbf{prompt engineering},
+\textbf{multi-step AI agent development}, and \textbf{evaluation pipelines} for production systems.
+Built \textbf{FinOps Sentinel} --- a multi-agent compliance Q\&A and knowledge lookup system with
+RAGAS faithfulness \textbf{1.0000}, live in production. Experienced designing agents that handle
+real-world classification, retrieval, and reasoning tasks at scale. Currently delivering enterprise
+software at FDLE while independently shipping production AI agents.
+}
+
+%% ── TECHNICAL SKILLS ──────────────────────────────────────────────────────
+\resumesection{TECHNICAL SKILLS}
+
+\renewcommand{\arraystretch}{1.35}
+\begin{tabularx}{\linewidth}{@{} >{\bfseries\color{navy}\fontsize{9.5pt}{11pt}\selectfont}l
+                                   @{\hspace{4pt}} >{\color{darktext}\fontsize{9.5pt}{11pt}\selectfont}X @{}}
+  AI / LLM:       & LangChain, LangGraph, RAG, Multi-Agent Orchestration, ChromaDB, BM25 Hybrid Retrieval, Cohere Rerank, RAGAS, Prompt Engineering, GPT-4o-mini, Claude API, OpenAI API, LLaMA, Gemini, Mistral \\
+  Backend \& APIs: & Python, FastAPI, Node.js, C\#, ASP.NET, RESTful APIs, Django REST Framework, Twilio \\
+  Data \& Databases: & PostgreSQL, MySQL, MongoDB, SQLite, SQL Server, Vector Databases \\
+  DevOps \& Cloud: & AWS EC2, Azure, Docker, GitHub Actions, CI/CD, Render, Vercel, Git \\
+  Frontend:       & React, TypeScript, JavaScript, Streamlit, HTML/CSS \\
+\end{tabularx}
+
+%% ── PROJECTS ──────────────────────────────────────────────────────────────
+\resumesection{PROJECTS}
+
+%% FinOps Sentinel
+\vspace{2pt}
+{\fontsize{9.5pt}{12pt}\selectfont
+  \textbf{\color{darktext}FinOps Sentinel}\enspace
+  \textcolor{mutedtext}{·\enspace
+    {\fontsize{8.5pt}{11pt}\selectfont
+      Python · LangChain · LangGraph · ChromaDB · FastAPI · Streamlit · GPT-4o-mini · Cohere
+    }
+  }\enspace
+  \textcolor{midblue}{\fontsize{8.5pt}{11pt}\selectfont
+    ·\enspace
+    \href{https://github.com/ShreyasKhandare/finops-sentinel}{github.com/ShreyasKhandare/finops-sentinel}
+    \enspace·\enspace
+    \href{https://shreyas-finops-sentinel.streamlit.app}{Live Demo}
+  }
+}
+
+\begin{itemize}
+  \item Built a production \textbf{multi-step AI agent system} ingesting PCI-DSS v4.0.1 (\textbf{413 chunks}) with a LangGraph orchestration layer for real-time compliance \textbf{Q\&A}, \textbf{classification}, and \textbf{knowledge lookup}
+  \item Engineered a \textbf{prompt-driven} QueryClassifier achieving \textbf{95--100\% routing accuracy} for agent classification; applied BM25\,+\,vector hybrid retrieval with Cohere Rerank for high-precision document retrieval
+  \item Developed \textbf{evaluation pipelines} using RAGAS achieving faithfulness score of \textbf{1.0000}; deployed FastAPI backend and Streamlit frontend on Render and Streamlit Cloud --- \textbf{reliable in production}, publicly accessible
+\end{itemize}
+
+%% Career Automation System
+\vspace{4pt}
+{\fontsize{9.5pt}{12pt}\selectfont
+  \textbf{\color{darktext}Career Automation System}\enspace
+  \textcolor{mutedtext}{·\enspace
+    {\fontsize{8.5pt}{11pt}\selectfont
+      Python · Claude API · GitHub Actions · n8n · Telegram Bot API · Gmail API · SQLite · SerpAPI
+    }
+  }\enspace
+  \textcolor{midblue}{\fontsize{8.5pt}{11pt}\selectfont
+    ·\enspace
+    \href{https://github.com/ShreyasKhandare/automation-system}{github.com/ShreyasKhandare/automation-system}
+  }
+}
+
+\begin{itemize}
+  \item Designed and deployed an \textbf{8-agent automation platform} for real-world tasks: job discovery, \textbf{lead qualification}, \textbf{CRM integration} (Apollo.io), \textbf{appointment coordination}, email triage, and AI market intelligence --- fully async, config-driven, zero daily manual time
+  \item Architected a Python orchestrator routing Telegram commands to specialized agents with \textbf{Claude API} natural-language fallback; built \textbf{scalable} approval flows via GitHub Actions cron and n8n API glue for multi-step automation
+\end{itemize}
+
+%% ── EXPERIENCE ────────────────────────────────────────────────────────────
+\resumesection{EXPERIENCE}
+
+\vspace{2pt}
+{\fontsize{9.5pt}{12pt}\selectfont
+  \textbf{\color{darktext}Systems Project Consultant}\enspace
+  \textcolor{mutedtext}{---}\enspace
+  \textcolor{navy}{\textbf{Florida Department of Law Enforcement (FDLE)}}%
+  \hfill
+  \textcolor{mutedtext}{\fontsize{8.5pt}{11pt}\selectfont Sep 2025 -- Present}
+}
+
+\begin{itemize}
+  \item Develop and deliver full-stack enterprise systems for a statewide law enforcement agency --- \textbf{translating client requirements} into \textbf{reliable production applications} under real operational constraints with no established playbook
+  \item Design and optimize SQL data pipelines and reporting systems for mission-critical decision-making; \textbf{partner with cross-functional stakeholders} across product, ops, and engineering using Agile/JIRA
+\end{itemize}
+
+%% ── EDUCATION ─────────────────────────────────────────────────────────────
+\resumesection{EDUCATION}
+
+\vspace{2pt}
+{\fontsize{9.5pt}{12pt}\selectfont
+  \textbf{\color{darktext}M.S.\ in Computer Science}%
+  \hfill
+  \textcolor{mutedtext}{\fontsize{8.5pt}{11pt}\selectfont Aug 2023 -- May 2025}\\
+  \textcolor{navy}{Florida State University --- Tallahassee, FL}\\
+  {\fontsize{8.5pt}{11pt}\selectfont\color{mutedtext}
+    Advanced Database Systems · Advanced OS · Network Security · Cryptography · AI/ML · Data Structures \& Algorithms
+  }
+}
+
+\vspace{6pt}
+{\fontsize{9.5pt}{12pt}\selectfont
+  \textbf{\color{darktext}B.Tech in Computer Science}%
+  \hfill
+  \textcolor{mutedtext}{\fontsize{8.5pt}{11pt}\selectfont Aug 2019 -- May 2023}\\
+  \textcolor{navy}{Rajiv Gandhi Proudyogiki Vishwavidyalaya --- Bhopal, India}
+}
+
+%% ══════════════════════════════════════════════════════════════════════════
+\end{document}
