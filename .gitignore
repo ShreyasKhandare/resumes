@@ -1,0 +1,14 @@
+# Never commit secrets
+.env
+*.key
+*secret*
+*password*
+*token*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Keep active/ folder tracked (it's what the website points to)
+# but ignore any temp files
+active/*.tmp
